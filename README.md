@@ -1,4 +1,4 @@
-# GitHub Pages Portfolio
+# Portfolio: GitHub Pages
 
 It is now time to create your own portfolio website. You will use the Portfolio Website Template that your group
 created. You will create a new repository on your **personal** GitHub account and copy the necessary files from the
