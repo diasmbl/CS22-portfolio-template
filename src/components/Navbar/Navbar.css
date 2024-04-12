@@ -1,0 +1,83 @@
+/* Navbar.css */
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #f8fafc;
+  border-radius: 48px;
+}
+
+.navbar {
+  background-color: #ffffff; /* Your preferred background color */
+  border-radius: 24px; /* Adjust to your preference */
+  padding: 1rem 2rem; /* Adjust padding to your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure navbar is positioned to contain absolute children */
+}
+
+
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem; /* Adjust the space between links */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adds subtle shadow */
+}
+
+.navbar li {
+  padding: 0.5rem 1rem; /* Padding for clickable area */
+  position: relative; /* To contain the pseudo-element for the highlight */
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Neutral color for the links */
+  font-weight: 500; /* Adjust the weight as needed */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+  display: block; /* This ensures the <a> tag fills the <li> for larger click area */
+}
+
+/* Highlight effect on hover */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Align to the bottom of the <a> tag */
+  left: 50%; /* Start from the middle */
+  transform: translateX(-50%); /* Center the pseudo-element */
+  width: 0; /* Start with no width */
+  height: 2px; /* Height of the highlight effect */
+  background-color: #00BFFF; /* The highlight color */
+  transition: all 0.3s ease; /* Transition for the hover effect */
+}
+
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #007bff; /* Highlight color on hover/focus */
+}
+
+/* Active link styles */
+.navbar a.active {
+  color: #007bff; /* Active link color */
+  text-decoration: underline; /* Underline for the active link */
+}
+
+/* When hovering over the <a>, the pseudo-element grows to full width */
+.navbar a:hover::after,
+.navbar a:focus::after {
+  width: calc(100% - 20px); /* Full width of the <a> tag, minus some padding */
+  left: 10px; /* Half of the subtracted width to keep it centered */
+  transform: translateX(0%); /* Reset transform to align from the left edge */
+}
+
+.theme-switcher {
+  margin-left: auto; /* Pushes the theme-switching button to the right */
+}

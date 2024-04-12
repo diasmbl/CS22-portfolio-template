@@ -1,0 +1,35 @@
+.uses-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px; /* More padding for a spacious layout */
+  background-color: #f9f9f9; /* Light background to offset the cards */
+}
+
+.uses-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px; /* Adjusted for a balanced layout */
+}
+
+.uses-section__group {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 24px; /* More natural spacing between elements */
+  padding-left: 20px; /* Balanced padding */
+  border-left: 3px solid #ddd; /* Thicker border for emphasis */
+}
+
+.uses-section__group h2 {
+  margin: 0;
+  font-size: 22px; /* More prominent size for section titles */
+  font-weight: bold;
+  color: #333; /* Matching the card title for consistency */
+  min-width: 140px; /* Adjusted to accommodate larger font */
+}
+
+.uses-section__group-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Consistent spacing for a unified look */
+}

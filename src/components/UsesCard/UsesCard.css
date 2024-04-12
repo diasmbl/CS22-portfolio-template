@@ -1,0 +1,26 @@
+.uses-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* More natural spacing within the card */
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff; /* Crisp white background */
+  border-radius: 12px; /* Slightly more pronounced rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  padding: 24px; /* Generous padding for a roomier feel */
+  border: 1px solid #ccc; /* Softer border for a more refined look */
+}
+
+.uses-card h3 {
+  margin: 0;
+  font-size: 20px; /* Slightly larger for emphasis */
+  font-weight: 600; /* Bold but not too heavy */
+  color: #333; /* Deep, rich text color */
+}
+
+.uses-card p {
+  margin: 0;
+  color: #666; /* Softer than the header for hierarchy */
+  font-size: 16px;
+  line-height: 1.6; /* Enhanced readability */
+}

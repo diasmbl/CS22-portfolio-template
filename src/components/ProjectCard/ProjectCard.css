@@ -1,0 +1,73 @@
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif; /* Or any other font you prefer */
+  color: #333;
+  background: #f9f9f9; /* Light background to make content pop */
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #2c3e50; /* A darker shade for the title */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Assuming ProjectCard has a top-level element with class 'project-card' */
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* If you want round images */
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #3498db; /* A pleasant blue */
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Add responsive touches for smaller screens */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,57 @@
+.about-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Distribute space around items */
+  margin: 2em auto; /* Center the section with automatic side margins */
+  padding: 2em; /* Inner spacing */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background: #ffffff; /* Bright background for contrast */
+  max-width: 960px; /* Maximum width for better layout on large screens */
+}
+
+.profile-and-bio {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Align items to the start of the flex container */
+}
+
+.profile-pic {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  margin-right: 2em;
+  border: 3px solid #eee; /* Light border for the image */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow for the image */
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular images */
+  object-fit: cover; /* Ensure the image covers the space */
+}
+
+.bio-and-socials h1 {
+  margin: 0 0 0.3em 0; /* Reduced bottom margin */
+  font-size: 2.5em;
+  color: #333;
+  font-weight: bold; /* More emphasis on the name */
+}
+
+.bio-and-socials h2 {
+  font-size: 1.5em;
+  color: #555; /* Slightly darker for more contrast */
+  font-weight: normal;
+  margin: 0.5em 0 1em 0; /* Added bottom margin */
+}
+
+.bio-and-socials p {
+  color: #555;
+  line-height: 1.6; /* Improved line spacing for readability */
+}
+
+.social-links {
+  margin-top: 1em;
+  display: flex; /* Align social links horizontally */
+  align-items: center; /* Center items vertically */
+}
+
